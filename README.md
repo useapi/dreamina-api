@@ -1,6 +1,6 @@
 # Dreamina API examples (useapi.net)
 
-Runnable Node.js examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net) — generate **Seedance 2.0** and **Sora 2** video through a simple REST API that drives your own [Dreamina (CapCut)](https://dreamina.capcut.com/) account. The Dreamina API also generates **Seedream** and **Nano Banana** images — see the [API overview](https://useapi.net/docs/api-dreamina-v1).
+Runnable Node.js examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net) — generate video with the **Seedance** family (2.0, 2.0 Fast, 1.5 Pro, 1.0) and **Sora 2**, plus images with the **Seedream** family (5.0, 4.x, 3.0), **Nano Banana**, and **GPT Image**, all through a simple REST API that drives your own [Dreamina (CapCut)](https://dreamina.capcut.com/) account.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Dreamina API, and downloads every result — so you can queue a batch and come back to the winners.
 
