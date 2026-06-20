@@ -1,7 +1,7 @@
 {
   "name": "dreamina-api",
   "version": "1.0.0",
-  "description": "Runnable Node.js example for the Dreamina API by useapi.net — Seedance 2.0 text-to-video and image-to-video.",
+  "description": "Runnable Node.js examples for the Dreamina API by useapi.net — Seedance 2.0 and Sora 2 video, Seedream and Nano Banana images.",
   "author": "useapi.net",
   "license": "ISC",
   "type": "module",

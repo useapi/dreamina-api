@@ -1,29 +1,29 @@
-# Dreamina API examples (useapi.net) — Seedance 2.0 video
+# Dreamina API examples (useapi.net)
 
-Runnable Node.js example for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net) — generate **Seedance 2.0** video (text-to-video with native audio, and first/last-frame image-to-video) through a simple REST API that drives your own Dreamina account.
+Runnable Node.js examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net) — generate **Seedance 2.0** and **Sora 2** video through a simple REST API that drives your own [Dreamina (CapCut)](https://dreamina.capcut.com/) account. The Dreamina API also generates **Seedream** and **Nano Banana** images — see the [API overview](https://useapi.net/docs/api-dreamina-v1).
 
-📖 Full walkthrough: **[How to Generate AI Video with Seedance 2.0 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash)**
+Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Dreamina API, and downloads every result — so you can queue a batch and come back to the winners.
 
-`dreamina.mjs` reads prompts from `prompts.json`, uploads any first/last-frame images, submits each job to [`POST /videos`](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos), polls [`GET /videos/{jobid}`](https://useapi.net/docs/api-dreamina-v1/get-dreamina-videos-jobid), and downloads every finished MP4.
+| Example | What it does | Tutorial |
+|---|---|---|
+| [`seedance-video/`](./seedance-video) | Batch-generate **Seedance 2.0** / **Sora 2** video — text-to-video and first/last-frame image-to-video | [How to Generate AI Video with Seedance 2.0 and Sora 2 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash) |
 
-## Prerequisites
+## Quick start
 
-- [Node.js](https://nodejs.org) v21 or newer (no dependencies to install — uses built-in `fetch`)
-- A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi)
-- A connected [Dreamina account](https://useapi.net/docs/api-dreamina-v1)
-
-## Usage
+You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install), a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi), and a connected [Dreamina account](https://useapi.net/docs/start-here/setup-dreamina) (one [$15/month subscription](https://useapi.net/docs/subscription) covers every useapi.net API):
 
 ```bash
-node ./dreamina.mjs <API_TOKEN> <EMAIL> [PROMPTS_FILE]
+git clone https://github.com/useapi/dreamina-api.git
+cd dreamina-api/seedance-video
+node ./dreamina.mjs <API_TOKEN> <EMAIL>
 ```
 
-`PROMPTS_FILE` defaults to `prompts.json`. The script looks the account up by email before submitting.
+Edit `prompts.json` in each folder to queue your own prompts. Every supported parameter is documented on the [POST /videos](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos) and [POST /images](https://useapi.net/docs/api-dreamina-v1/post-dreamina-images) endpoint pages.
 
-## Prompts
+## About useapi.net
 
-`prompts.json` is an array of prompt objects — `prompt` is the only required field; the default model is `seedance-2.0`. For image-to-video, set the first/last-frame image to a **local file path** (uploaded for you). Every supported parameter is documented on [POST /videos](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos). Local image paths in `prompts.json` are inputs **you** supply — they are not included in this repo.
+[useapi.net](https://useapi.net) is an experimental REST API for AI services. The Dreamina API drives your own Dreamina (CapCut) account, so you spend your plan's credits at consumer rates instead of metered developer-API pricing. See the [model matrix](https://useapi.net/model-matrix) and pricing on the [API overview](https://useapi.net/docs/api-dreamina-v1).
 
----
+Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for any support questions and concerns.
 
-Support: [Discord](https://discord.gg/w28uK3cnmF) · [Telegram](https://t.me/use_api) · [YouTube](https://www.youtube.com/@midjourneyapi)
+We regularly post guides and tutorials on the [YouTube Channel](https://www.youtube.com/@midjourneyapi).
