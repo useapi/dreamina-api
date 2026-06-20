@@ -1,0 +1,25 @@
+[
+    {
+        "prompt": "By default the seedance-2.0 model with a 16:9 ratio, 720p resolution and a 5-second duration will be used."
+    },
+    {
+        "model": "seedance-2.0",
+        "ratio": "16:9",
+        "duration": 10,
+        "resolution": "720p",
+        "prompt": "A serene mountain landscape at sunset with the camera slowly panning right. For all parameters see https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos"
+    },
+    {
+        "model": "seedance-2.0",
+        "duration": 5,
+        "firstFrame": "./first_frame.jpeg",
+        "lastFrame": "./last_frame.jpeg",
+        "prompt": "Image-to-video with a start frame (firstFrame → firstFrameRef) and an end frame (lastFrame → endFrameRef). When image frames are provided, ratio is auto-detected and must not be set."
+    },
+    {
+        "model": "seedance-2.0-fast",
+        "duration": 5,
+        "firstFrame": "./image.jpeg",
+        "prompt": "Faster Seedance 2.0 Fast generation from a single start frame (720p only). Other models (seedance-1.5-pro, seedance-1.0-mini, and on CA accounts seedance-1.0-pro / seedance-1.0-fast / sora2) are selectable via the model field — see the videos docs."
+    }
+]
