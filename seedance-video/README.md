@@ -1,6 +1,6 @@
 # Seedance 2.0 & Sora 2 video — Dreamina API batch generation (Node.js)
 
-Batch-generate [Seedance 2.0](https://dreamina.capcut.com/) and Sora 2 video through the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api).
+Batch-generate [Seedance 2.0](https://dreamina.capcut.com/) and Sora 2 video through the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api).
 
 📖 Full walkthrough: **[How to Generate AI Video with Seedance 2.0 and Sora 2 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash)**
 
@@ -9,7 +9,7 @@ Batch-generate [Seedance 2.0](https://dreamina.capcut.com/) and Sora 2 video thr
 ## Prerequisites
 
 - [Node.js](https://nodejs.org) v21 or newer (no dependencies to install — uses built-in `fetch`)
-- A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api)
+- A useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api)
 - A connected [Dreamina account](https://useapi.net/docs/start-here/setup-dreamina) email
 
 ## Usage

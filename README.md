@@ -1,6 +1,6 @@
 # Dreamina API examples (useapi.net)
 
-Runnable Node.js examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api) — generate video with the **Seedance** family (2.0, 2.0 Fast, 1.5 Pro, 1.0) and **Sora 2**, plus images with the **Seedream** family (5.0, 4.x, 3.0), **Nano Banana**, and **GPT Image**, all through a simple REST API that drives your own [Dreamina (CapCut)](https://dreamina.capcut.com/) account.
+Runnable Node.js examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) — generate video with the **Seedance** family (2.0, 2.0 Fast, 1.5 Pro, 1.0) and **Sora 2**, plus images with the **Seedream** family (5.0, 4.x, 3.0), **Nano Banana**, and **GPT Image**, all through a simple REST API that drives your own [Dreamina (CapCut)](https://dreamina.capcut.com/) account.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Dreamina API, and downloads every result — so you can queue a batch and come back to the winners.
 
@@ -10,7 +10,7 @@ Each example reads a list of prompts from `prompts.json`, submits them through t
 
 ## Quick start
 
-You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install), a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api), and a connected [Dreamina account](https://useapi.net/docs/start-here/setup-dreamina) (one [$15/month subscription](https://useapi.net/docs/subscription?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api) covers every useapi.net API):
+You need [Node.js](https://nodejs.org) v21 or newer (no dependencies to install), a useapi.net [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), and a connected [Dreamina account](https://useapi.net/docs/start-here/setup-dreamina) (one [$15/month subscription](https://useapi.net/docs/subscription?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) covers every useapi.net API):
 
 ```bash
 git clone https://github.com/useapi/dreamina-api.git
@@ -22,7 +22,7 @@ Edit `prompts.json` in each folder to queue your own prompts. Every supported pa
 
 ## About useapi.net
 
-[useapi.net](https://useapi.net/?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api) is an experimental REST API for AI services. The Dreamina API drives your own Dreamina (CapCut) account, so you spend your plan's credits at consumer rates instead of metered developer-API pricing. See the [model matrix](https://useapi.net/model-matrix?utm_source=github&utm_medium=readme&utm_campaign=dreamina-api) and pricing on the [API overview](https://useapi.net/docs/api-dreamina-v1).
+[useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) is an experimental REST API for AI services. The Dreamina API drives your own Dreamina (CapCut) account, so you spend your plan's credits at consumer rates instead of metered developer-API pricing. See the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) and pricing on the [API overview](https://useapi.net/docs/api-dreamina-v1).
 
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for any support questions and concerns.
 
