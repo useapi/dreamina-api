@@ -1,7 +1,7 @@
 {
   "name": "dreamina-api",
   "version": "1.0.0",
-  "description": "Runnable Node.js examples for the Dreamina API by useapi.net — Seedance 2.0 and Sora 2 video, Seedream and Nano Banana images.",
+  "description": "Runnable Node.js and Python examples for the Dreamina API by useapi.net — Seedance 2.0 and Sora 2 video, Seedream, Nano Banana and GPT Image images.",
   "author": "useapi.net",
   "license": "MIT",
   "type": "module",

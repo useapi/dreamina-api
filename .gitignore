@@ -12,3 +12,6 @@ node_modules
 # Run logs / scratch
 result.json
 _*.*
+*_results.txt
+*_errors.txt
+__pycache__/
