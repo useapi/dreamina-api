@@ -4,6 +4,8 @@ Batch-generate [Seedance 2.0](https://dreamina.capcut.com/) and Sora 2 video thr
 
 📖 Full walkthrough: **[How to Generate AI Video with Seedance 2.0 and Sora 2 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash)**
 
+Videos made with this API, on YouTube: [Selfie Situation • Seedance 2.0](https://youtube.com/shorts/TYlg9cVyNy4) · [A Very Talented Man • Seedance 2.0](https://youtube.com/shorts/AZKeOy4u1t4) · [Smoking is bad for you • Seedance 2.0](https://youtube.com/shorts/22wkkVyn4Xk)
+
 `dreamina.mjs` reads prompts from `prompts.json`, uploads any first/last-frame images, submits each job to [`POST /videos`](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos), polls [`GET /videos/{jobid}`](https://useapi.net/docs/api-dreamina-v1/get-dreamina-videos-jobid), and downloads every finished MP4.
 
 ## Prerequisites
