@@ -1,0 +1,17 @@
+[
+    {
+        "prompt": "A red fox curled up asleep in fresh snow, soft morning light, photorealistic. By default the seedream-4.6 model with an auto ratio and 2k resolution is used. It also runs on a free Dreamina account's daily credits."
+    },
+    {
+        "model": "seedream-5.0-lite",
+        "ratio": "16:9",
+        "resolution": "4k",
+        "prompt": "A neon-lit night market in the rain, reflections on wet pavement, cinematic wide shot. For all parameters see https://useapi.net/docs/api-dreamina-v1/post-dreamina-images"
+    },
+    {
+        "model": "seedream-4.6",
+        "imageRef_1": "./reference.jpeg",
+        "imageStrength": 0.6,
+        "prompt": "Restyle the reference photo as a watercolor illustration. imageRef_1..imageRef_6 take local image files, which are uploaded for you. Models on CA-region accounts only: seedream-5.0-pro, seedream-4.7, nano-banana."
+    }
+]

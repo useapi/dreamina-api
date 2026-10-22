@@ -2,7 +2,7 @@
 
 Script version 1.0, July 19, 2026
 
-Script to batch-generate videos using prompts with the Dreamina API v1 by useapi.net 🚀
+Script to batch-generate videos using prompts with the Dreamina API by useapi.net
 Defaults to the seedance-2.0 model and uses the asynchronous videos endpoint.
 For more details visit https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos
 
