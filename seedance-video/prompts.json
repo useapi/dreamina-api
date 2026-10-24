@@ -20,6 +20,6 @@
         "model": "seedance-2.0-fast",
         "duration": 5,
         "firstFrame": "./image.jpeg",
-        "prompt": "Faster Seedance 2.0 Fast generation from a single start frame (720p only). Other models (seedance-2.5, seedance-1.5-pro, seedance-1.0-mini on US accounts, and seedance-1.0-pro / seedance-1.0-fast on CA accounts) are selectable via the model field — see the videos docs."
+        "prompt": "Faster Seedance 2.0 Fast generation from a single start frame (720p by default, and 1080p, 2k or 4k upscaled from 720p). Other models (seedance-2.5, seedance-2.0-mini and seedance-1.5-pro on both regions, seedance-1.0-mini on US accounts only, and seedance-1.0-pro, seedance-1.0-fast, happyhorse-1.1 and wan-3.0 on CA accounts only) are selectable via the model field — see the videos docs."
     }
 ]

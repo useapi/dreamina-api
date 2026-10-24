@@ -24,7 +24,7 @@ node ./dreamina.mjs <API_TOKEN> <EMAIL> [PROMPTS_FILE]
 
 ## Prompts
 
-`prompts.json` is an array of prompt objects — `prompt` is the only required field; the default model is `seedance-2.0`. Other models include `seedance-2.5`, `seedance-2.0-fast`, `seedance-2.0-mini`, `seedance-1.5-pro`, `seedance-1.0-mini` (US accounts) and `seedance-1.0-pro` / `seedance-1.0-fast` (CA accounts). For image-to-video, set the first/last-frame image to a local file path (uploaded for you). Every supported parameter is documented on [POST /videos](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api). Local image paths in `prompts.json` are inputs you supply — they are not included in this repo.
+`prompts.json` is an array of prompt objects — `prompt` is the only required field; the default model is `seedance-2.0`. Other models include `seedance-2.5`, `seedance-2.0-fast`, `seedance-2.0-mini` and `seedance-1.5-pro` on both regions, `seedance-1.0-mini` (US only), and `seedance-1.0-pro`, `seedance-1.0-fast`, `happyhorse-1.1` and `wan-3.0` (CA only). `resolution` takes `480p`, `720p`, `1080p`, `2k` or `4k`, depending on the model, and 1080p on `seedance-1.5-pro` is CA only. For image-to-video, set the first/last-frame image to a local file path (uploaded for you). Every supported parameter is documented on [POST /videos](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api). Local image paths in `prompts.json` are inputs you supply — they are not included in this repo.
 
 ---
 
