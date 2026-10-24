@@ -2,13 +2,13 @@
 
 Runnable examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), a third-party REST API for [Dreamina](https://dreamina.capcut.com/) (CapCut) by [ByteDance](https://www.bytedance.com/). It uses your [Dreamina subscription](https://dreamina.capcut.com/pricing/dreamina-price): Free, Basic $15, Standard $36, Advanced $79 to $320 or Ultra $520 a month in the US (as of October 2026).
 
-It makes video with Seedance 2.5, 2.0, 2.0 Fast, 2.0 Mini, 1.5 Pro and 1.0 Pro, Mini and Fast, plus Sora 2, and images with Seedream 5.0 Pro, 5.0 Lite, 4.7, 4.6, 4.5, 4.1, 4.0 and 3.0, Nano Banana Pro and Nano Banana, GPT Image 2.5 Flare and Sunburst, and GPT Image 2.
+It makes video with Seedance 2.5, 2.0, 2.0 Fast, 2.0 Mini, 1.5 Pro and 1.0 Pro, Mini and Fast, and images with Seedream 5.0 Pro, 5.0 Lite, 4.7, 4.6, 4.5, 4.1, 4.0 and 3.0, Nano Banana Pro and Nano Banana, GPT Image 2.5 Flare and Sunburst, and GPT Image 2.
 
 Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Dreamina API, and downloads every result, so you can queue a batch and come back to the winners. [`images/`](./images) ships both a Node.js (`.mjs`) and a Python (`.py`) script, with no dependencies to install.
 
 | Example | What it does | Tutorial |
 |---|---|---|
-| [`seedance-video/`](./seedance-video) | Batch-generate Seedance 2.0 and Sora 2 video: text-to-video and first/last-frame image-to-video | [How to Generate AI Video with Seedance 2.0 and Sora 2 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
+| [`seedance-video/`](./seedance-video) | Batch-generate Seedance 2.5 and 2.0 video: text-to-video and first/last-frame image-to-video | [How to Generate AI Video with Seedance 2.5 and 2.0 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
 | [`images/`](./images) | Batch-generate Seedream, Nano Banana and GPT Image pictures, with optional reference images (Node.js and Python) | [POST /images](https://useapi.net/docs/api-dreamina-v1/post-dreamina-images?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
 
 The same Seedance 2.0 job on Dreamina, PixVerse, Runway and MiniMax, with a sourced price dataset, is in [useapi/seedance-2-api](https://github.com/useapi/seedance-2-api).
@@ -31,7 +31,7 @@ Edit `prompts.json` in each folder to queue your own prompts. Every supported pa
 
 ### Does Dreamina have an API?
 
-Yes, through useapi.net. The useapi.net Dreamina API runs Seedance 2.5, 2.0, 2.0 Fast and 2.0 Mini, Sora 2, and Seedream, GPT Image 2.5 and Nano Banana Pro images over REST on your Dreamina subscription, with no enterprise onboarding or approval. Dreamina itself is a website with no developer API (as of October 2026), and ByteDance's [BytePlus ModelArk](https://docs.byteplus.com/en/docs/ModelArk/1544106) runs Seedance only after you buy a prepaid resource pack.
+Yes, through useapi.net. The useapi.net Dreamina API runs Seedance 2.5, 2.0, 2.0 Fast and 2.0 Mini, and Seedream, GPT Image 2.5 and Nano Banana Pro images over REST on your Dreamina subscription, with no enterprise onboarding or approval. Dreamina itself is a website with no developer API (as of October 2026), and ByteDance's [BytePlus ModelArk](https://docs.byteplus.com/en/docs/ModelArk/1544106) runs Seedance only after you buy a prepaid resource pack.
 
 ### How much does the Dreamina API cost?
 
@@ -53,7 +53,7 @@ More answers: [Dreamina API questions](https://useapi.net/docs/api-dreamina-v1?u
 
 ## Tutorials
 
-- [How to Generate AI Video with Seedance 2.0 and Sora 2 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): text-to-video and first/last-frame image-to-video on Seedance 2.0 and Sora 2
+- [How to Generate AI Video with Seedance 2.5 and 2.0 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): text-to-video and first/last-frame image-to-video on Seedance 2.5 and 2.0
 - [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): the Dreamina route next to PixVerse, Runway, MiniMax and the official API
 
 ## About useapi.net

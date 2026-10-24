@@ -20,6 +20,6 @@
         "model": "seedance-2.0-fast",
         "duration": 5,
         "firstFrame": "./image.jpeg",
-        "prompt": "Faster Seedance 2.0 Fast generation from a single start frame (720p only). Other models (seedance-1.5-pro, seedance-1.0-mini, and on CA accounts seedance-1.0-pro / seedance-1.0-fast / sora2) are selectable via the model field — see the videos docs."
+        "prompt": "Faster Seedance 2.0 Fast generation from a single start frame (720p only). Other models (seedance-2.5, seedance-1.5-pro, seedance-1.0-mini on US accounts, and seedance-1.0-pro / seedance-1.0-fast on CA accounts) are selectable via the model field — see the videos docs."
     }
 ]
