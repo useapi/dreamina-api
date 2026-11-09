@@ -199,7 +199,9 @@ def submitImage(apiToken, account, prompt, index):
     elif status == 400:
         print('🛑 Validation error', responseText)
     elif status == 402:
-        print('🛑 Subscription expired or insufficient credits', responseText)
+        print('🛑 useapi.net subscription expired, renew at https://useapi.net/docs/subscription', responseText)
+    elif status == 412:
+        print('🛑 Dreamina account out of credits, top up the account or add another one', responseText)
     elif status == 596:
         print('🛑 Account session expired — re-add the account at https://useapi.net/docs/api-dreamina-v1/post-dreamina-accounts', responseText)
     else:
@@ -362,7 +364,7 @@ def execute(apiToken, email, promptFile):
                     appendFile(ERRORS_FILE, f'429 (gave up after {MAX_429_RETRIES} retries),#{i}\n')
                     break
                 time.sleep(SLEEP_429)
-            elif status in (402, 596):
+            elif status in (402, 412, 596):
                 sys.exit(1)
             else:
                 break

@@ -211,7 +211,10 @@ async function submitImage(apiToken, account, prompt, index) {
             console.log(`🛑 Validation error`, createBody);
             break;
         case 402:
-            console.log(`🛑 Subscription expired or insufficient credits`, createBody);
+            console.log(`🛑 useapi.net subscription expired, renew at https://useapi.net/docs/subscription`, createBody);
+            break;
+        case 412:
+            console.log(`🛑 Dreamina account out of credits, top up the account or add another one`, createBody);
             break;
         case 596:
             console.log(`🛑 Account session expired — re-add the account at https://useapi.net/docs/api-dreamina-v1/post-dreamina-accounts`, createBody);
@@ -450,7 +453,7 @@ async function execute(apiToken, email, promptFile) {
                 }
                 await sleep(SLEEP_429);
             }
-            else if (responseCode == 402 || responseCode == 596)
+            else if (responseCode == 402 || responseCode == 412 || responseCode == 596)
                 process.exit(1);
             else
                 break;

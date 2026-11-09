@@ -175,7 +175,11 @@ async function submit(apiToken, url, body, index, prompt) {
                 await fs.appendFile(ERRORS_FILE, `${createResponse.status},#${index}:${prompt}\n`);
                 break;
             case 402:
-                console.log(`🛑 Subscription expired or insufficient credits`, createBody);
+                console.log(`🛑 useapi.net subscription expired, renew at https://useapi.net/docs/subscription`, createBody);
+                await fs.appendFile(ERRORS_FILE, `${createResponse.status},#${index}:${prompt}\n`);
+                break;
+            case 412:
+                console.log(`🛑 Dreamina account out of credits, top up the account or add another one`, createBody);
                 await fs.appendFile(ERRORS_FILE, `${createResponse.status},#${index}:${prompt}\n`);
                 break;
             case 596:
@@ -435,7 +439,7 @@ async function execute(apiToken, email, promptFile) {
                 await sleep(SLEEP_429);
             }
             else
-                if (responseCode == 402 || responseCode == 596) {
+                if (responseCode == 402 || responseCode == 412 || responseCode == 596) {
                     process.exit(1);
                 } else
                     break;
