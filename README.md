@@ -2,13 +2,14 @@
 
 Runnable examples for the [Dreamina API](https://useapi.net/docs/api-dreamina-v1?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) by [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), a third-party REST API for [Dreamina](https://dreamina.capcut.com/) (CapCut) by [ByteDance](https://www.bytedance.com/). It uses your [Dreamina subscription](https://dreamina.capcut.com/pricing/dreamina-price): Free, Basic $15, Standard $36, Advanced $79 to $320 or Ultra $520 a month in the US (as of October 2026).
 
-It makes video with Seedance 2.5, 2.0, 2.0 Fast, 2.0 Mini and 1.5 Pro, Seedance 1.0 Pro (CA only), 1.0 Mini (US only) and 1.0 Fast (CA only), HappyHorse 1.1 by Alibaba (CA only) and Wan 3.0 by Tongyi Lab (CA only), and images with Seedream 5.0 Pro (CA only), 5.0 Lite, 4.7 (CA only), 4.6, 4.5, 4.1, 4.0 and 3.0, Nano Banana Pro and Nano Banana (CA only), GPT Image 2.5 Flare and Sunburst, and GPT Image 2. CA only means a Canada-region Dreamina account, and US only a US one. Both regions run the same resolutions on Seedance 2.5, up to 1080p, and on the Seedance 2.0 models, up to 4K, and 1080p on Seedance 1.5 Pro is CA only.
+It makes video with Seedance 2.5, 2.5 Flash (CA only), 2.5 Draft, 2.0, 2.0 Fast and 2.0 Mini, Seedance 1.5 Pro (US only), 1.0 Pro (CA only), 1.0 Mini (US only) and 1.0 Fast (CA only), HappyHorse 1.1 by Alibaba (CA only) and Wan 3.0 by Tongyi Lab (CA only), and images with Seedream 5.5 (CA only), 5.0 Pro, 5.0 Flash (US only), 5.0 Lite (CA only), 4.7 (CA only), 4.6, 4.5, 4.1, 4.0, 3.1 (CA only) and 3.0, Nano Banana Pro and Nano Banana 2.1 (CA only), GPT Image 2.5 Flare and Sunburst, and GPT Image 2. CA only means a Canada-region Dreamina account, and US only a US one. Seedance 2.5 goes up to 1080p on US accounts and 4K on CA, the Seedance 2.0 models up to 4K on both, and a Seedance 2.5 Draft becomes a 1080p video, or 4K on CA.
 
-Each example reads a list of prompts from `prompts.json`, submits them through the useapi.net Dreamina API, and downloads every result, so you can queue a batch and come back to the winners. [`images/`](./images) ships both a Node.js (`.mjs`) and a Python (`.py`) script, with no dependencies to install.
+The video and image examples read a list of prompts from `prompts.json`, submit them through the useapi.net Dreamina API, and download every result, so you can queue a batch and come back to the winners. [`seedance-draft/`](./seedance-draft) makes one draft and its full-quality video. [`images/`](./images) and [`seedance-draft/`](./seedance-draft) ship both a Node.js (`.mjs`) and a Python (`.py`) script, with no dependencies to install.
 
 | Example | What it does | Tutorial |
 |---|---|---|
 | [`seedance-video/`](./seedance-video) | Batch-generate Seedance 2.5 and 2.0 video: text-to-video and first/last-frame image-to-video | [How to Generate AI Video with Seedance 2.5 and 2.0 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
+| [`seedance-draft/`](./seedance-draft) | Make a 480p Seedance 2.5 draft, watch it, then turn the same video into 1080p or 4K (Node.js and Python) | [How to Draft Seedance 2.5 Videos at 480p and Finish Them in 1080p or 4K](https://useapi.net/docs/articles/dreamina-seedance-2-5-draft?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
 | [`images/`](./images) | Batch-generate Seedream, Nano Banana and GPT Image pictures, with optional reference images (Node.js and Python) | [POST /images](https://useapi.net/docs/api-dreamina-v1/post-dreamina-images?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) |
 
 The same Seedance 2.0 job on Dreamina, PixVerse, Runway and MiniMax, with a sourced price dataset, is in [useapi/seedance-2-api](https://github.com/useapi/seedance-2-api).
@@ -39,7 +40,7 @@ Through useapi.net, a 5-second Seedance 2.0 Fast video at 720p costs $0.37 on Dr
 
 ### Is there a Dreamina API key?
 
-Through useapi.net, you use our [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), since Dreamina issues no API key, and connect your Dreamina account once with its email and password through [Setup Dreamina](https://useapi.net/docs/start-here/setup-dreamina?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), with no BytePlus account and no prepaid token pack. Both regions run Seedance 2.5 and the Seedance 2.0 models at the same resolutions, up to 4K. Pick a Canada-region account for Seedance 1.0 Pro and 1.0 Fast, HappyHorse 1.1, Wan 3.0 and 1080p on Seedance 1.5 Pro. A US or Canadian VPN is needed only to create the account in the browser.
+Through useapi.net, you use our [API token](https://useapi.net/docs/start-here/setup-useapi?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), since Dreamina issues no API key, and connect your Dreamina account once with its email and password through [Setup Dreamina](https://useapi.net/docs/start-here/setup-dreamina?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api), with no BytePlus account and no prepaid token pack. Both regions run Seedance 2.5 and the Seedance 2.0 models, the 2.0 models at the same resolutions, up to 4K. Pick a Canada-region account for Seedance 2.5 Flash, Seedance 2.5 at 4K, Seedance 1.0 Pro and 1.0 Fast, HappyHorse 1.1 and Wan 3.0, and a US one for Seedance 1.5 Pro. A US or Canadian VPN is needed only to create the account in the browser.
 
 ### Is there a Seedance 2.5 API that accepts real faces?
 
@@ -54,6 +55,7 @@ More answers: [Dreamina API questions](https://useapi.net/docs/api-dreamina-v1?u
 ## Tutorials
 
 - [How to Generate AI Video with Seedance 2.5 and 2.0 via the Dreamina API](https://useapi.net/docs/articles/dreamina-bash?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): text-to-video and first/last-frame image-to-video on Seedance 2.5 and 2.0
+- [How to Draft Seedance 2.5 Videos at 480p and Finish Them in 1080p or 4K](https://useapi.net/docs/articles/dreamina-seedance-2-5-draft?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): a cheap 480p draft, then the same video in full quality
 - [Seedance 2.0 and 2.5 API Pricing: Every Route, Compared](https://useapi.net/docs/articles/seedance-2-api-pricing?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api): the Dreamina route next to PixVerse, Runway, MiniMax and the official API
 
 ## About useapi.net
