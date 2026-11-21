@@ -26,6 +26,23 @@ node ./dreamina.mjs <API_TOKEN> <EMAIL>
 
 Edit `prompts.json` in each folder to queue your own prompts. Every supported parameter is documented on the [POST /videos](https://useapi.net/docs/api-dreamina-v1/post-dreamina-videos?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) and [POST /images](https://useapi.net/docs/api-dreamina-v1/post-dreamina-images?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) endpoint pages.
 
+## MCP server
+
+useapi.net also runs a hosted [Model Context Protocol](https://modelcontextprotocol.io) server for Dreamina, so an AI assistant such as the Claude app, ChatGPT, Claude Code, Cursor or VS Code Copilot can use it on your Dreamina accounts. It has 15 tools: Seedance videos from text, first and last frames, keyframes or omni references (images, videos and audio cited in the prompt as `@image1`, `@video1`, `@audio1`), video upscale, a smoother frame rate, a Seedance 2.5 draft rendered in full quality, Seedream, GPT Image and Nano Banana images, uploads, your generation history and running jobs. `unlimited: true` uses Dreamina's Unlimited mode where your plan has it. Nothing to install or run locally.
+
+- Endpoint: `https://api.useapi.net/v1/dreamina/mcp`
+- Transport: Streamable HTTP
+- Authorization: your useapi.net API token in the `Authorization: Bearer …` header, and an account connected with the [Dreamina setup](https://useapi.net/docs/start-here/setup-dreamina?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api). The Claude app and ChatGPT sign in with OAuth instead.
+- Listed in the official MCP Registry as `net.useapi/dreamina`
+
+Claude Code:
+
+```bash
+claude mcp add --transport http useapi-dreamina https://api.useapi.net/v1/dreamina/mcp --header "Authorization: Bearer YOUR_API_TOKEN"
+```
+
+Cursor, VS Code, Windsurf, the Claude app, ChatGPT and the full tool list: [Dreamina MCP server docs](https://useapi.net/docs/api-dreamina-v1/mcp?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api). useapi.net is a third-party API, not affiliated with Dreamina or ByteDance.
+
 ## Common questions
 
 <!-- Figures from the Dreamina API overview (useapi.net/docs/api-dreamina-v1), read 2026-10-23, which cites https://docs.byteplus.com/en/docs/ModelArk/1544106 read 2026-10-21 (5 s, 720p, 16:9: Seedance 2.0 Fast $0.60, 2.0 Mini $0.38, 2.0 1080p $1.87), https://docs.byteplus.com/en/docs/ModelArk/2191775 (Seedance runs only with a prepaid resource pack) and https://docs.byteplus.com/en/docs/modelark/seedance-2-5 (no real human faces, up to 30 s per request). Ours: US Advanced $79 / 8,645 credits, Fast 40 cr = $0.37, Mini 25 cr = $0.23. Seedance 2.0 1080p costs $1.86 on Canada Advanced and $1.87 on US Advanced (US runs 1080p and 4K since 2026-10-23), against $1.87, so it is not quoted. Models and regions from the overview's Models table and post-dreamina-videos.md Model Capabilities (Oct 23, 2026 changelog: HappyHorse 1.1 and Wan 3.0 on CA, seedance-1.0-mini US only). The useapi.net subscription is not part of the per-video math. -->
