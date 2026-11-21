@@ -1,0 +1,22 @@
+{
+  "name": "useapi-dreamina",
+  "version": "1.0.0",
+  "description": "Hosted Dreamina MCP server by useapi.net (15 tools): make Seedance video and images on your own Dreamina (CapCut) accounts, render drafts in full quality, upscale videos and smooth their frame rate. Third-party paid service, not affiliated with ByteDance, CapCut or Dreamina.",
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "useapi.net API token",
+      "description": "Your useapi.net API token, from https://useapi.net/docs/start-here/setup-useapi",
+      "envVar": "USEAPI_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "useapi-dreamina": {
+      "httpUrl": "https://api.useapi.net/v1/dreamina/mcp",
+      "headers": {
+        "Authorization": "Bearer ${USEAPI_TOKEN}"
+      }
+    }
+  }
+}

@@ -43,6 +43,33 @@ claude mcp add --transport http useapi-dreamina https://api.useapi.net/v1/dreami
 
 Cursor, VS Code, Windsurf, the Claude app, ChatGPT and the full tool list: [Dreamina MCP server docs](https://useapi.net/docs/api-dreamina-v1/mcp?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api). useapi.net is a third-party API, not affiliated with Dreamina or ByteDance.
 
+## Use with Claude Code
+
+This repo is also a Claude Code plugin marketplace. The plugin adds the hosted Dreamina MCP server, and reads your token from the `USEAPI_TOKEN` environment variable, so set it before you start Claude Code:
+
+```bash
+export USEAPI_TOKEN=user:12345-...      # your useapi.net API token
+```
+
+Then, inside Claude Code:
+
+```
+/plugin marketplace add useapi/dreamina-api
+/plugin install dreamina@useapi-dreamina
+```
+
+On Claude Code 2.1.275 or later, `/plugin install dreamina --marketplace useapi/dreamina-api` does both in one step. Run `/mcp` to check that `useapi-dreamina` is connected.
+
+## Use with Gemini CLI
+
+This repo is also a Gemini CLI extension with the same MCP server:
+
+```bash
+gemini extensions install https://github.com/useapi/dreamina-api
+```
+
+The install asks for your useapi.net API token and keeps it in the system keychain. Change it later with `gemini extensions config useapi-dreamina`, and check the connection with `gemini mcp list`.
+
 ## Common questions
 
 <!-- Figures from the Dreamina API overview (useapi.net/docs/api-dreamina-v1), read 2026-10-23, which cites https://docs.byteplus.com/en/docs/ModelArk/1544106 read 2026-10-21 (5 s, 720p, 16:9: Seedance 2.0 Fast $0.60, 2.0 Mini $0.38, 2.0 1080p $1.87), https://docs.byteplus.com/en/docs/ModelArk/2191775 (Seedance runs only with a prepaid resource pack) and https://docs.byteplus.com/en/docs/modelark/seedance-2-5 (no real human faces, up to 30 s per request). Ours: US Advanced $79 / 8,645 credits, Fast 40 cr = $0.37, Mini 25 cr = $0.23. Seedance 2.0 1080p costs $1.86 on Canada Advanced and $1.87 on US Advanced (US runs 1080p and 4K since 2026-10-23), against $1.87, so it is not quoted. Models and regions from the overview's Models table and post-dreamina-videos.md Model Capabilities (Oct 23, 2026 changelog: HappyHorse 1.1 and Wan 3.0 on CA, seedance-1.0-mini US only). The useapi.net subscription is not part of the per-video math. -->

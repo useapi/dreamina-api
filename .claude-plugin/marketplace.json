@@ -1,0 +1,23 @@
+{
+  "name": "useapi-dreamina",
+  "description": "useapi.net Dreamina plugin for Claude Code: the hosted MCP server.",
+  "owner": {
+    "name": "useapi.net",
+    "url": "https://useapi.net"
+  },
+  "plugins": [
+    {
+      "name": "dreamina",
+      "source": "./",
+      "description": "Hosted Dreamina MCP server by useapi.net (15 tools): make Seedance video and images on your own Dreamina (CapCut) accounts, render drafts in full quality, upscale videos and smooth their frame rate. Third-party paid service, not affiliated with ByteDance, CapCut or Dreamina.",
+      "category": "media",
+      "tags": [
+        "dreamina",
+        "seedance",
+        "video",
+        "image",
+        "mcp"
+      ]
+    }
+  ]
+}

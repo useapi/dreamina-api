@@ -1,0 +1,29 @@
+{
+  "name": "dreamina",
+  "displayName": "Dreamina (useapi.net)",
+  "description": "Hosted Dreamina MCP server by useapi.net (15 tools): make Seedance video and images on your own Dreamina (CapCut) accounts, render drafts in full quality, upscale videos and smooth their frame rate. Third-party paid service, not affiliated with ByteDance, CapCut or Dreamina.",
+  "author": {
+    "name": "useapi.net",
+    "url": "https://useapi.net"
+  },
+  "homepage": "https://useapi.net/docs/api-dreamina-v1/mcp",
+  "repository": "https://github.com/useapi/dreamina-api",
+  "license": "MIT",
+  "keywords": [
+    "dreamina",
+    "seedance",
+    "video",
+    "image",
+    "mcp",
+    "useapi"
+  ],
+  "mcpServers": {
+    "useapi-dreamina": {
+      "type": "http",
+      "url": "https://api.useapi.net/v1/dreamina/mcp",
+      "headers": {
+        "Authorization": "Bearer ${USEAPI_TOKEN}"
+      }
+    }
+  }
+}
