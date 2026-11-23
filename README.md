@@ -28,6 +28,8 @@ Edit `prompts.json` in each folder to queue your own prompts. Every supported pa
 
 ## MCP server
 
+[![Dreamina MCP connector](https://glama.ai/mcp/connectors/net.useapi/dreamina/badges/score.svg)](https://glama.ai/mcp/connectors/net.useapi/dreamina)
+
 useapi.net also runs a hosted [Model Context Protocol](https://modelcontextprotocol.io) server for Dreamina, so an AI assistant such as the Claude app, ChatGPT, Claude Code, Cursor or VS Code Copilot can use it on your Dreamina accounts. It has 15 tools: Seedance videos from text, first and last frames, keyframes or omni references (images, videos and audio cited in the prompt as `@image1`, `@video1`, `@audio1`), video upscale, a smoother frame rate, a Seedance 2.5 draft rendered in full quality, Seedream, GPT Image and Nano Banana images, uploads, your generation history and running jobs. `unlimited: true` uses Dreamina's Unlimited mode where your plan has it. Nothing to install or run locally.
 
 - Endpoint: `https://api.useapi.net/v1/dreamina/mcp`
