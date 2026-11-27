@@ -108,6 +108,8 @@ More answers: [Dreamina API questions](https://useapi.net/docs/api-dreamina-v1?u
 
 [useapi.net](https://useapi.net/?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) is a third-party REST API for AI services. The Dreamina API runs on your [Dreamina subscription](https://dreamina.capcut.com/pricing/dreamina-price), so each video costs its share of the subscription's credits instead of metered developer-API pricing. See the models and prices on the [Dreamina API overview](https://useapi.net/docs/api-dreamina-v1?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api) and every service in the [model matrix](https://useapi.net/model-matrix?utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api).
 
+Is Dreamina working right now? See the [status page](https://useapi.net/status?api=dreamina&utm_source=github.com&utm_medium=referral&utm_campaign=dreamina-api).
+
 Visit our [Discord Server](https://discord.gg/w28uK3cnmF) or [Telegram Channel](https://t.me/use_api) for any support questions and concerns.
 
 We regularly post guides and tutorials on the [YouTube Channel](https://www.youtube.com/@useapi-net).
